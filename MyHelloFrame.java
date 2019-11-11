@@ -13,6 +13,7 @@ public class MyHelloFrame extends JFrame
         setTitle("실습_3(2019.11.11");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(350,150);
+        JPanel ml = new MyHelloPanelListener();
         setVisible(true);
     }
 }

@@ -8,23 +8,22 @@ import javax.swing.*;
  * @version (버전번호나 날짜)
  */
 public class MyHelloPanelListener extends JPanel
-implements MouseListener,keyListener
+implements MouseListener,KeyListener
 {
-    public JPanel panel;
-    public JLabel label;
-    public MyHellpPanelListener (JPanel p,JLabel l){
-        panel = p;
-        label = l;
-        l.setSize( 100,20);
+    public JPanel p;
+    public JLabel l;
+    public MyHelloPanelListener (JPanel p,JLabel l){
+        l.setSize(100,20);
         l.setLocation(50,50);
-        this.setLayout(null);this.add(l);
+        this.setLayout(null);
+        this.add(l);
     }
     public void mouseClicked(MouseEvent e){}
     public void mouseEntered(MouseEvent e){}
     public void mouseExited(MouseEvent e){}
     public void mousePressed(MouseEvent e){}
     public void mouseReleased(MouseEvent e){}
-    public void keyPressed(keyEvent e){
+    public void keyPressed(KeyEvent e){
         int keyCode = e.getKeyCode();
             switch(keyCode){
                 case KeyEvent.VK_UP:
@@ -37,6 +36,6 @@ implements MouseListener,keyListener
                 l.setLocation(l.getX()+10,l.getY());break;
             }
     }
-    public void keyReleased(keyEvent e){}
-    public void keyTyped(keyEvent e){}
+    public void keyReleased(KeyEvent e){}
+    public void keyTyped(KeyEvent e){}
 }

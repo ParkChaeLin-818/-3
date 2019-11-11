@@ -12,11 +12,11 @@ public class MyHelloFrame extends JFrame
     public MyHelloFrame(){
         setTitle("실습_3(2019.11.11");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(350,150);
+        setSize(500,500);
         MyHelloPanelListener ml = new MyHelloPanelListener();
         this.add(ml);
-        this.addKeyListener(mp);
-        this.addMouseListener(mp);
+        this.addKeyListener(ml);
+        this.addMouseListener(ml);
         setVisible(true);
     }
 }

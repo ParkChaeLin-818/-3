@@ -22,7 +22,7 @@ implements MouseListener,keyListener
     public void mouseEntered(MouseEvent e){}
     public void mouseExited(MouseEvent e){}
     public void mousePressed(MouseEvent e){
-        public void 
+        
     }
     public void mouseReleased(MouseEvent e){}
     public void keyPressed(keyEvent e){}

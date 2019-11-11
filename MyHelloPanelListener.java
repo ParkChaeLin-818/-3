@@ -10,11 +10,9 @@ import javax.swing.*;
 public class MyHelloPanelListener extends JPanel
 implements MouseListener,keyListener
 {
-    public JPanel panel;
-    public JLabel label;
+    public JPanel p;
+    public JLabel l;
     public MyHellpPanelListener (JPanel p,JLabel l){
-        panel = p;
-        label = l;
         l.setSize(100,20);
         l.setLocation(50,50);
         this.setLayout(null);
@@ -33,7 +31,7 @@ implements MouseListener,keyListener
         l.setLocation(x,y);
     }
     public void mouseReleased(MouseEvent e){}
-    public void keyPressed(keyEvent e){
+    public void keyPressed(KeyEvent e){
     int keyCode = e.getKeyCode();
         switch(keyCode){
             case KeyEvent.VK_UP:
@@ -46,6 +44,6 @@ implements MouseListener,keyListener
             l.setLocation(l.getX()+10,l.getY());break;
         }
     }
-    public void keyReleased(keyEvent e){}
-    public void keyTyped(keyEvent e){}
+    public void keyReleased(KeyEvent e){}
+    public void keyTyped(KeyEvent e){}
 }
